@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">EspressoTestExample</string>
+    <string name="hello_world">Hello World!!!</string>
+    <string name="hello_world_with_espresso">Hello World!!! Now with Espresso Test!!!</string>
+    <string name="button_main">Try it!</string>
+    <string name="button_secondary">Try it! On new activity!</string>
+
+</resources>
