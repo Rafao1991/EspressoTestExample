@@ -2,7 +2,7 @@ package com.rafaosousa.example.espressotestexample;
 
 public class Calculator {
 
-    private long sum(Long... longs) {
+    public long sum(long... longs) {
         long result = 0;
 
         for (long l : longs)
@@ -11,11 +11,32 @@ public class Calculator {
         return result;
     }
 
-    private long division(Long... longs) {
+    public long subtract(long... longs) {
         long result = 0;
 
         for (long l : longs)
-            result /= l;
+            result -= l;
+
+        return result;
+    }
+
+    public long multiply(long... longs) {
+        long result = 1;
+
+        for (long l : longs)
+            result *= l;
+
+        return result;
+    }
+
+    public long divide(long... longs) {
+        long result = 0;
+
+        for (long l : longs)
+            if (result == 0)
+                result = l;
+            else
+                result /= l;
 
         return result;
     }
