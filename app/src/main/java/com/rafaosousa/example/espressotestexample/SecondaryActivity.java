@@ -15,7 +15,7 @@ public class SecondaryActivity extends AppCompatActivity {
 
         Integer extra = getIntent().getIntExtra("extra", 0);
 
-        textViewSecondary = (TextView) findViewById(R.id.textview_secondary);
-        textViewSecondary.setText(extra.toString());
+        textViewSecondary = findViewById(R.id.textview_secondary);
+        textViewSecondary.setText(String.valueOf(extra));
     }
 }

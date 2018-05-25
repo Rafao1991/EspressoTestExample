@@ -17,10 +17,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        textViewMain = (TextView) findViewById(R.id.textview_main);
+        textViewMain = findViewById(R.id.textview_main);
         textViewMain.setText(getResources().getString(R.string.hello_world));
 
-        buttonMain = (Button) findViewById(R.id.button_main);
+        buttonMain = findViewById(R.id.button_main);
         buttonMain.setText(getResources().getString(R.string.button_main));
         buttonMain.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        buttonSecondary = (Button) findViewById(R.id.button_secondary);
+        buttonSecondary = findViewById(R.id.button_secondary);
         buttonSecondary.setText(getResources().getString(R.string.button_secondary));
         buttonSecondary.setOnClickListener(new View.OnClickListener() {
             @Override
